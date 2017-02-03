@@ -1,0 +1,146 @@
+/* Color Variables */
+:root{
+  --red:#EE6055;
+  --pink:#FF9B85;
+  --green:#60D394;
+  --hover:#717270;
+  --h-fonts:#EDEDED;
+  --h-background:#3C3E3B;
+}
+
+/** {
+   outline: 1px solid red !important;
+}*/
+
+body{
+  box-sizing: border-box;
+  padding-top:70px;
+  padding-bottom:20px;
+}
+
+main{
+  width: 80%;
+  margin: auto;
+}
+
+/*Header navigation starts */
+
+nav{
+  background-color: var(--h-background);
+}
+
+.navbar-header{
+  display:table;
+}
+
+.navbar-brand{
+  display:table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.navbar-brand, #nav-list li a i{
+  color:var(--h-fonts);
+  font-weight: bold;
+  font-size:2.2em;
+}
+
+#nav-list li a:hover{
+  background-color: var(--hover);
+}
+
+.navbar-brand:hover{
+  color:var(--hover);
+}
+
+#header-nav div div, #nav-list{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Header navigation ends */
+
+/* Banner starts */
+.banner{
+  padding:0px;
+  display:flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background:linear-gradient(to right, var(--h-background), #DBDBDB, #EDEDED);
+}
+
+.banner .intro{
+  margin:auto;
+  text-align:center;
+  padding: 0 7em 0 7em;
+  display: block;
+}
+
+#about-me{
+  font-size: 1.6em;
+  color:var(--h-background);
+  font-weight: bold
+}
+
+#about-me span{
+  font-weight: bold;
+  font-style: italic;
+}
+
+#about-me-button{
+  background-color:var(--h-background);
+  color:var(--h-fonts);
+  font-weight: bold;
+  font-size:1.5em;
+}
+
+/* Banner ends */
+
+/* Thumbnails start */
+
+.contents img{
+  max-width: 350px;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding:0;
+}
+
+.contents{
+  border:none;
+  display: block;
+  position: relative;
+}
+
+.contents a{
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width:100%;
+}
+
+.contents a img:hover{
+  opacity:0.8;
+}
+
+.contents img{
+    display:block;
+}
+
+.contents span{
+  margin:auto;
+  width:100%;
+  max-width: 350px;
+  margin:auto;
+  display:block;
+  text-align: center;
+  background-color:var(--h-background);
+  opacity:0.7;
+  color:var(--h-fonts);
+  position:absolute;
+  bottom:0;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Thumbnails end */

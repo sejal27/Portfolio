@@ -1,0 +1,100 @@
+/** {
+   outline: 1px solid red !important;
+}*/
+
+:root{
+    --color1:#661000;
+    --color2:#ff7d66;
+    --color3:#ffd4cc;
+    --color4:#ff2700;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    padding-top:70px;
+    margin:auto;
+    width: 65%;
+}
+
+/* Header */
+
+#header-nav{
+    background-color:var(--color4);
+    border-radius:0;
+    border:0;
+}
+
+/* Navigation Menu */
+
+.navbar-header .navbar-brand{
+    color:var(--color3);
+    font-size:2em;
+    height:100%;
+}
+
+#nav-list{
+    vertical-align: center;
+    height:100%;
+}
+
+#nav-list a{
+    color:var(--color1);
+    text-align:center;
+    font-size: 2em;
+    color:var(--color3);
+}
+
+#nav-list a:hover{
+    background: var(--color2);
+}
+
+/* End Header */
+
+/* Custom Banner */
+
+.banner{
+  width:100%;
+  margin:auto;
+  background-color: var(--color4);
+  display:flex;
+  flex-flow: row nowrap;
+}
+
+#bannerimg img{
+    width:70%;
+    display:block;
+    margin:auto;
+}
+
+.banner .expmenu{
+  z-index:110;
+  display:flex;
+  width:40%;
+  flex-flow:column nowrap;
+  justify-content:center;
+}
+
+.expmenu div{
+  font-weight:bolder;
+  font-size: 1.2em;
+  color: var(--color3);
+  text-align: center;
+  padding-top:1em;
+  padding-bottom:1em;
+}
+/* Custom Banner Ends */
+
+.exp{
+    display:flex;
+    justify-content:space-between;
+}
+
+.exp img{
+    max-width: 262.5px;
+    max-height: 300px;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Sejal</title>
+</head>
+
+<body>
+
+<!-- Header navigation starts -->
+  <nav class="navbar navbar-fixed-top" id="header-nav">
+    <div class="container-fluid">
+      <div class="navbar-header navbar-left">
+        <a href="index.html" class="navbar-brand">
+          Sejal Parikh
+        </a>
+      </div>
+      <ul id="nav-list" class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+          <li>
+            <a href="menu-categories.html">
+              <i class="fa fa-twitter-square"></i><br class="hidden-xs">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-linkedin-square"></i><br class="hidden-xs">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-wordpress"></i><br class="hidden-xs">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-envelope"></i><br class="hidden-xs">
+            </a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+<!-- Header navigation ends -->
+
+  <main class="container-fluid">
+  <!-- Banner starts -->
+    <section class="row">
+      <section class="banner col-md-12">
+        <article class="banner-image">
+          <img src="images/sejal.jpg" alt="My photograph">
+        </article>
+        <article class="intro">
+          <p id="about-me">
+            A <span>Telecom Engineer</span>, turned to <span>Software Testing</span> with a stint at <span>social change making</span>, now working as a <span>Technical Writer</span>, and aspring to be a <span> Web Developer</span>.
+          </p>
+          <br>
+          <p>
+            <button class="btn btn-lg" id="about-me-button" href="#">More about me!</button>
+          </p>
+        </article>
+      </section>
+    </section>
+  <!-- Banner header ends -->
+  <br><br>
+  <!-- Featured content thumbnails start -->
+    <section class="row more-contents">
+      <article class="col-md-4 thumbnail contents" id="technical-writing">
+        <a href="#" data-toggle="modal" data-target="#tech-writing-model">
+          <img src="images/cat.jpg" alt="">
+          <span>Technical Writing</span>
+        </a>
+      </article>
+      <article class="col-md-4 thumbnail contents" id="webdev">
+        <a href="#" data-toggle="modal" data-target="#webdev-modal">
+          <img src="images/cat.jpg" alt="">
+          <span>Web Developer</span>
+        </a>
+      </article>
+      <article class="col-md-4 thumbnail contents" id="testing">
+        <a href="#" data-toggle="modal" data-target="#testing-modal">
+          <img src="images/city3.jpg" alt="">
+        </a>
+      </article>
+    </section>
+    <br>
+    <section class="row more-contents">
+      <article class="col-md-4 thumbnail contents" id="writing">
+        <a href="#" data-toggle="modal" data-target="#writing-model">
+          <img src="images/rhino.jpg" alt="">
+        </a>
+      </article>
+      <article class="col-md-4 thumbnail contents" id="social-change">
+        <a href="#" data-toggle="modal" data-target="#social-change-model">
+          <img src="images/city4.jpg" alt="">
+        </a>
+      </article>
+      <article class="col-md-4 thumbnail contents" id="telecom">
+        <a href="#" data-toggle="modal" data-target="#telecom-modal">
+          <img src="images/city3.jpg" alt="">
+        </a>
+      </article>
+    </section>
+  <!-- Featured content thumbnails end -->
+
+  <!-- Model dialogues start here -->
+    <div class="modal fade" id="tech-writing-model" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>contents about technical writing</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="webdev-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>contents about web dev</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="testing-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>contents about testing</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="writing-model" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>contents about writing</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="social-change-model" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>contents about social change</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="telecom-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>contents about telecom</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Model dialogues end here -->
+
+  </main>
+
+
+
+
+
+</body>
+</html>
