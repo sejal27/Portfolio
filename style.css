@@ -78,12 +78,12 @@ nav{
   text-align:center;
   display: block;
   border:none;
-  padding:5% 4%;
+  padding:5% 5%;
 }
 
 .banner-img{
   width:100%;
-  max-width: 330px;
+  max-width: 280px;
   padding:0px;
 }
 
