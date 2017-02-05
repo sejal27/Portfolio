@@ -121,8 +121,13 @@ main{
   color: #fff;
   background-color: #000;
   opacity: 0.8;
+  padding:3px 0;
 }
 
+.more-contents h2{
+  color:var(--h-background);
+  font-weight: bold;
+}
 /* Thumbnails end */
 
 /* Footer starts */
