@@ -14,8 +14,13 @@ This is a sample portfolio page with fully responsive layouts as well as respons
 
 Below are some screenshots that show the responsiveness:
 
+Medicum and large devices:
 ![Medium and large devices](https://github.com/sejal27/Portfolio/blob/master/screenshots/md-lg.JPG)
+
+Small devices:
 ![Small devices](https://github.com/sejal27/Portfolio/blob/master/screenshots/sm.JPG)
+
+Extra-small devices:
 ![Extra-small devices](https://github.com/sejal27/Portfolio/blob/master/screenshots/xs.JPG)
 
 The webpage has been successfully tested for Chrome and Firefox (latest versions).
