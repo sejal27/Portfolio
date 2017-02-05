@@ -10,7 +10,15 @@
 - [License](#license)
 
 ## Introduction
-Although as per the Udacity project requirement, the porfolio project is finished, however I intend to improve a lot upon this at later time, starting with adding more contents and appropriate links as well as some animations. Hence consider this as work in progress.
+This is a sample portfolio page with fully responsive layouts as well as responsive images. Although as per the Udacity project requirement, the porfolio project is finished, however I intend to improve a lot upon this at later time, starting with adding more contents and appropriate links as well as some animations. Hence consider this as work in progress.
+
+Below are some screenshots that show the responsiveness:
+
+![Medium and large devices](https://github.com/sejal27/Portfolio/blob/master/screenshots/md-lg.JPG)
+![Small devices](https://github.com/sejal27/Portfolio/blob/master/screenshots/sm.JPG)
+![Extra-small devices](https://github.com/sejal27/Portfolio/blob/master/screenshots/xs.JPG)
+
+The webpage has been successfully tested for Chrome and Firefox (latest versions).
 
 ## Author
 [Sejal Parikh](https://in.linkedin.com/in/sejalparikh)
