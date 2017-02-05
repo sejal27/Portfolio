@@ -23,7 +23,7 @@ Small devices:
 Extra-small devices:
 ![Extra-small devices](https://github.com/sejal27/Portfolio/blob/master/screenshots/xs.JPG)
 
-The webpage has been successfully tested for Chrome and Firefox (latest versions).
+The webpage has been successfully tested for Chrome and Firefox (latest versions). Furthermore, the live github version of this document has also been passed through the [html validator](https://validator.w3.org/nu/) and has resulted in no errors.
 
 ## Author
 [Sejal Parikh](https://in.linkedin.com/in/sejalparikh)
