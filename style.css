@@ -1,8 +1,5 @@
 /* Color Variables */
 :root{
-  --red:#EE6055;
-  --pink:#FF9B85;
-  --green:#60D394;
   --hover:#717270;
   --h-fonts:#EDEDED;
   --h-background:#3C3E3B;
@@ -14,101 +11,71 @@
 
 body{
   box-sizing: border-box;
-  padding-bottom:20px;
+  font-size:16px;
+  color: var(--h-fonts);
+  font-family:'oxygen', sans-serif;
+}
+
+/* Padding for the static navigation bar on the top */
+main{
+  padding-top:100px;
+  padding-bottom: 50px;
   margin:auto;
-  padding:80px;
 }
 
-.nopleftpadding{
-   padding-left: 0 !important;
-}
+/* Navigation starts */
 
-.norightpadding{
-  padding-right:0 !important;
-}
-
-/*Header navigation starts */
-
-nav{
+.navbar-default{
   background-color: var(--h-background);
+  border:0;
+  border-radius:0;
 }
 
-.navbar-header{
-  display:table;
-}
-
-.navbar-brand{
-  display:table-cell;
-  vertical-align: middle;
+.navbar-default .navbar-brand{
   text-align: center;
+  margin-bottom: 0;
+  margin-top: 8px;
 }
 
 #nav-list li{
   display:inline-block;
 }
 
-.navbar-brand, #nav-list li a i{
+.navbar-default .navbar-brand, #nav-list li a i{
   color:var(--h-fonts);
   font-weight: bold;
-  font-size:6vmin;
+  font-size:2.3em;
 }
 
 #nav-list li a:hover{
   background-color: var(--hover);
 }
 
-.navbar-brand:hover{
-  color:var(--hover);
-}
-
-#header-nav div div, #nav-list{
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
 /* Header navigation ends */
 
 /* Banner starts */
-.banner{
-  display:flex;
-  flex-flow: row nowrap;
-  background:linear-gradient(to right, var(--h-background), #DBDBDB, #EDEDED);
-}
-
-.banner .intro{
-  text-align:center;
-  margin:auto;
-  border:none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.banner-img{
-  width:100%;
-  max-width: 330px;
-  padding:0px;
+.jumbotron{
+  background:linear-gradient(to left, var(--h-background), #DBDBDB, #EDEDED);
 }
 
 #about-me{
-  /*font-size: 1.4em;*/
   color:var(--h-background);
+  margin-bottom: auto;
   font-weight: bold;
   line-height:150%;
-  text-align: center;
   padding: 0 10px;
-  font-size:3.5vmin;
+  font-size:1.5em;
 }
 
 #about-me span{
-  font-style: italic;
+  font-weight: 800;
 }
 
 #about-me-button{
   background-color:var(--h-background);
   color:var(--h-fonts);
   font-weight: bold;
-  font-size:3vmin;
+  font-size:1.4em;
 }
 
 #about-me-button:hover{
@@ -118,12 +85,17 @@ nav{
 
 /* Thumbnails start */
 
-
 .contents{
+  height: 250px;
   position: relative;
   width: 100%;
   margin-bottom:15px;
   overflow: hidden;
+}
+
+.more-contents{
+  margin:auto;
+  width: 100%;
 }
 
 .contents img{
@@ -132,7 +104,7 @@ nav{
   display:block;
   padding:0px;
   box-shadow: 0 1px 5px 2px #c3c3c3;
-}
+  }
 
 .contents img:hover{
   opacity:0.8;
@@ -144,7 +116,7 @@ nav{
   width: 100%;
   margin:auto;
   text-align: center;
-  font-size: 3.8vmin;
+  font-size: 1.4em;
   text-transform: uppercase;
   color: #fff;
   background-color: #000;
@@ -195,16 +167,41 @@ footer{
 
 /** Small devices **/
 
-@media (min-width: 300px) and (max-width: 768px){
-
+@media (max-width: 766px){
+  /* Align header to the center */
   .navbar-header{
     margin:auto;
     width: 100%;
   }
-
-  .navbar-brand{
+  /* Set the font size relative to min viewport width */
+  .navbar-default .navbar-brand{
     width: 100%;
+    margin-top: 0;
+    font-size: 6vmin;
+  }
+
+  .jumbotron p{
+    font-size:4vmin;
+  }
+
+  /* Nav list hidden on extra small devices,
+  and displayed onthe footer instead */
+  #nav-list{
+    display:none;
+  }
+
+  /* All elements are displayed in 100% width
+  on extra small devices. */
+  .contents div, header{
+    width:100%;
   }
 }
 
+
+@media (min-width: 766px){
+/* footer hidden for small, medium, and large devices */
+  footer{
+    display:none;
+  }
+}
 /* Media queries end */

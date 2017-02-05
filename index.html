@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sejal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Sejal</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
   </head>
   <body>
   <!-- Header navigation starts -->
-    <nav class="navbar navbar-fixed-top" id="header-nav">
-      <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top" id="header-nav">
+      <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="navbar-brand">
+          <a href="index.html" class="navbar-brand pull-left">
             Sejal Parikh
           </a>
         </div>
-        <ul id="nav-list" class="nav navbar-nav navbar-right hidden-xs">
+        <ul id="nav-list" class="nav navbar-nav navbar-right">
             <li>
               <a href="#">
                 <i class="fa fa-facebook-official"></i>
@@ -53,188 +55,182 @@
       </div>
     </nav>
   <!-- Header navigation ends -->
-  <!-- Banner starts -->
-    <header class="container-fluid">
-      <section class="banner">
-        <div class="hidden-xs hidden-sm">
-          <img class="banner-img" src="images/sejal.jpg" alt="My photograph">
-        </div>
-        <article class="intro">
-          <h4 id="about-me">
-            <span class="text-nowrap">Telecom Engineer</span>, <span class="text-nowrap">Software Tester</span>, <span class="text-nowrap">Community Volunteer</span>, <span>Technical Writer</span>
-            <br> Now aspiring to become a
-            <span class="text-nowrap">Web Developer</span>.
-          </h4>
-          <div>
-          <button class="btn btn-md" id="about-me-button" href="#">Know More!</button>
-          <div>
-        </article>
-      </section>
+  <main class="container">
+  <!-- Banner starts
+  TODO: Make banner with picutre on the the left and text on the right side. -->
+    <header class="jumbotron">
+      <p id="about-me">
+        <span class="text-nowrap">Telecom Engineer</span>, <span class="text-nowrap">Software Tester</span>, <span class="text-nowrap">Community Volunteer</span>, <span class="text-nowrap">Technical Writer</span>
+        <br> Now aspiring to become a
+        <span class="text-nowrap">Web Developer</span>
+      </p><br>
+      <a class="btn btn-primary btn-md" id="about-me-button" href="#" role="button">Know More!</a>
     </header>
   <!-- Banner header ends -->
     <br>
-    <main class="container-fluid">
-    <!-- Featured content thumbnails start -->
-      <section class="row more-contents">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="#" data-toggle="modal" data-target="#tech-writing-model">
-              <div class="contents">
-                <img src="images/city3.jpg" class="img-responsive" alt="">
-                <span>Technical Writer</span>
-              </div>
-            </a>
+  <!-- Featured content thumbnails start -->
+    <section class="row more-contents">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#" data-toggle="modal" data-target="#tech-writing-model">
+            <div class="contents">
+              <img src="images/city3.jpg" class="img-responsive" alt="">
+              <span>Technical Writer</span>
+            </div>
+          </a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#" data-toggle="modal" data-target="#webdev-modal">
+            <div class="contents">
+              <img src="images/city4.jpg" class="img-responsive" alt="">
+              <span>Web Developer</span>
+            </div>
+          </a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#" data-toggle="modal" data-target="#testing-modal">
+            <div class="contents">
+              <img src="images/rhino.jpg" class="img-responsive" alt="">
+              <span>Software Tester</span>
+            </div>
+          </a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#" data-toggle="modal" data-target="#writing-model">
+            <div class="contents">
+              <img src="images/city3.jpg" class="img-responsive" alt="">
+              <span>Blogger</span>
+            </div>
+          </a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#" data-toggle="modal" data-target="#social-change-model">
+            <div class="contents">
+              <img src="images/city4.jpg" class="img-responsive" alt="">
+              <span>Social Change Maker</span>
+            </div>
+          </a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#" data-toggle="modal" data-target="#telecom-modal">
+            <div class="contents">
+              <img src="images/rhino.jpg" class="img-responsive" alt="">
+              <span>Telecom Engineer</span>
+            </div>
+          </a>
+      </div>
+    </section>
+  <!-- Featured content thumbnails end -->
+  <!-- Model dialogues start here
+  TODO: Add contents in the modal dialogues -->
+    <div class="modal fade" id="tech-writing-model" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>contents about technical writing</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="#" data-toggle="modal" data-target="#webdev-modal">
-              <div class="contents">
-                <img src="images/city4.jpg" class="img-responsive" alt="">
-                <span>Web Developer</span>
-              </div>
-            </a>
+      </div>
+    </div>
+    <div class="modal fade" id="webdev-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>contents about web dev</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="#" data-toggle="modal" data-target="#testing-modal">
-              <div class="contents">
-                <img src="images/rhino.jpg" class="img-responsive" alt="">
-                <span>Software Tester</span>
-              </div>
-            </a>
+      </div>
+    </div>
+    <div class="modal fade" id="testing-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>contents about testing</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="#" data-toggle="modal" data-target="#writing-model">
-              <div class="contents">
-                <img src="images/cat.jpg" class="img-responsive" alt="">
-                <span>Blogger</span>
-              </div>
-            </a>
+      </div>
+    </div>
+    <div class="modal fade" id="writing-model" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>contents about writing</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="#" data-toggle="modal" data-target="#telecom-modal">
-              <div class="contents">
-                <img src="images/city3.jpg" class="img-responsive" alt="">
-                <span>Telecom Engineer</span>
-              </div>
-            </a>
+      </div>
+    </div>
+    <div class="modal fade" id="social-change-model" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>contents about social change</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="#" data-toggle="modal" data-target="#social-change-model">
-              <div class="contents">
-                <img src="images/city4.jpg" class="img-responsive" alt="">
-                <span>Social Change-maker</span>
-              </div>
-            </a>
+      </div>
+    </div>
+    <div class="modal fade" id="telecom-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>contents about telecom</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
+      </div>
+    </div>
+  <!-- Model dialogues end here -->
+  </main>
 
-      </section>
-    <!-- Featured content thumbnails end -->
-    <!-- Model dialogues start here -->
-      <div class="modal fade" id="tech-writing-model" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-              <p>contents about technical writing</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="webdev-modal" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-              <p>contents about web dev</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="testing-modal" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-              <p>contents about testing</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="writing-model" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-              <p>contents about writing</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="social-change-model" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-              <p>contents about social change</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="telecom-modal" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-              <p>contents about telecom</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- Model dialogues end here -->
-    </main>
-    <footer class="container visible-xs">
-      <ul class="footer-nav col-xs-12">
-        <li>
-          <a href="#">
-            <i class="fa fa-facebook-official"></i>
-          </a>
-        </li>
-        <li>
-          <a href="menu-categories.html">
-            <i class="fa fa-twitter-square"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-linkedin-square"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-github-square"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-wordpress"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-envelope"></i>
-          </a>
-        </li>
-      </ul>
-    </footer>
+<!-- Footer starts (displayed only for the xs devices) -->
+  <footer class="container">
+    <ul class="footer-nav col-xs-12">
+      <li>
+        <a href="#">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li>
+        <a href="menu-categories.html">
+          <i class="fa fa-twitter-square"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-github-square"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-wordpress"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-envelope"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
   </body>
 </html>
